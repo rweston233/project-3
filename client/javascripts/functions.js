@@ -70,15 +70,18 @@ let findAllbitBatBotOrNots4 = arr => {
 };
 
 //XC
-/*let findAllbitBatBotOrNotsXC = arr => {
+let findAllbitBatBotOrNotsXC = arr => {
   let resultArr = [];
-  let elem = arr.toString();
-  for (elem in arr) {
-    resultArr.push(`${elem}: ${bitBatBotOrNot(arr)}`);
+  let arrStr = arr.join(" ");
+  console.log(arrStr);
+  for (index in arrStr) {
+    if (arrStr[index] != " ") {
+      resultArr.push(`${index}: ${bitBatBotOrNot(arrStr.charAt(index))}`);
+    }
   }
   return resultArr;
 };
-*/
+
 
 //test the functions
 
